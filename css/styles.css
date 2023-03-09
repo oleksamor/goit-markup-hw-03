@@ -57,6 +57,11 @@ a {
   overflow: hidden;
 }
 
+.page-header {
+  background-color: #ffffff;
+  padding-top: 24px;
+}
+
 .container {
   width: 1158px;
   padding-left: 15px;
@@ -65,10 +70,12 @@ a {
   outline: 2px solid red;
 }
 
-.page-header {
-  background-color: #ffffff;
-  padding-top: 24px;
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
+
 body {
   background-color: var(--primary-bg-color);
   font-family: var(--primary-font-family), sans-serif;
@@ -114,7 +121,9 @@ body {
 
 .page-nav {
   display: flex;
+  align-items: center;
 }
+
 .logotype {
   font-family: var(--secondary-font-family), sans-serif;
   font-size: var(--logo-font-size);
@@ -138,7 +147,9 @@ body {
 .menu-contacts {
   display: flex;
 }
-
+.address-phone-mail {
+  display: flex;
+}
 .menu {
   display: flex;
   width: 261px;
