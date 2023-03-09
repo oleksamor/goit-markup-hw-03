@@ -58,22 +58,21 @@ a {
 }
 
 .page-header {
-  background-color: #ffffff;
-  padding-top: 24px;
+  background-color: var(--primary-bg-color);
+  /* padding-top: 24px; */
 }
 
 .container {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
-  outline: 2px solid red;
+  margin: 24px;
+  /* outline: 2px solid rgb(0, 255, 38); */
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  margin-right: auto;
 }
 
 body {
@@ -122,6 +121,7 @@ body {
 .page-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 
 .logotype {
@@ -134,6 +134,7 @@ body {
   left: 156px;
   top: 24px;
   padding: 0px;
+  margin-right: 76px;
 }
 .web-color {
   color: var(--primary-brand-color);
@@ -142,14 +143,9 @@ body {
   color: var(--dark-color-bg);
 }
 .studio-color-footer {
-  color: #f4f4fd;
+  color: var(--light-color-bg) #f4f4fd;
 }
-.menu-contacts {
-  display: flex;
-}
-.address-phone-mail {
-  display: flex;
-}
+
 .menu {
   display: flex;
   width: 261px;
@@ -170,11 +166,17 @@ body {
 .header-item:last-child {
   margin-right: 0;
 }
-.contacts-item {
+/* .contacts-item {
+} */
+.menu-contacts {
+  display: flex;
+  gap: 40px;
 }
-
+.address-phone-mail {
+  display: flex;
+}
 .menu .menu-link:hover,
-.menu .menu-link:focus {
+.menu-link:focus {
   color: var(--presed-state-color);
 }
 
@@ -193,11 +195,20 @@ body {
 
 .hero {
   background: var(--dark-color-bg);
+  width: 1440px;
+  height: 600px;
+  left: 0px;
+  top: 72px;
+}
+.hero-container {
+  margin: 0 auto;
+  text-align: center;
 }
 .main-title {
   font-size: 56px;
   line-height: 1.07;
   color: var(--primary-white-color);
+  max-width: 496;
 }
 
 /* ========= Button ============== */
