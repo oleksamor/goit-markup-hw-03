@@ -66,7 +66,8 @@ a {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  /* margin: 24px; */
+  margin-left: auto;
+  margin-right: auto;
   outline: 2px solid rgb(0, 255, 38);
 }
 
@@ -115,8 +116,8 @@ body {
 .header-container {
   display: flex;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   /* justify-content: space-around; */
 }
 
@@ -261,11 +262,8 @@ body {
 
 /** =========== feature =============*/
 .feature-container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   background-color: #4d5ae5;
 }
 .feature-list {
@@ -284,9 +282,41 @@ body {
 }
 /** =========== /feature =============*/
 
+/* =================== ACTIVE ============== */
+.flex-container {
+  margin-bottom: 120px;
+}
+.action-container {
+  text-align: center;
+}
+.flex-list {
+  display: flex;
+  margin-top: 72px;
+  margin-right: 24px;
+  margin-bottom: 0;
+}
+.card-image {
+  display: block;
+}
+
+.item {
+  background: rgb(255, 255, 255);
+  margin-right: 24px;
+}
+.item:last-child {
+  margin-right: 0;
+}
+
+/* =================== /ACTIVE ============== */
 /* =================== Team ============== */
 .team {
+  text-align: center;
   background-color: var(--light-color-bg);
+}
+
+.team-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /* =================== /Team ============== */
 
@@ -298,7 +328,7 @@ body {
 
 .portfolio-list {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .portfolio-item {
   outline: solid rgb(208, 255, 0);
@@ -307,8 +337,14 @@ body {
 .portfolio-item:last-child {
   margin-right: 0;
 }
-
 /* ========= /portrfolio filters ============== */
+
+/* ========= portrfolio cards ============== */
+.cards-container {
+  display: flex;
+  justify-content: center;
+}
+/* ========= /portrfolio cards ============== */
 
 /* =============FOOTER=================== */
 

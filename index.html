@@ -73,7 +73,7 @@
     <main>
       <!-- hero image -->
       <section class="hero">
-        <div class="container hero-container">
+        <div class="container flex-container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button">Order Service</button>
         </div>
@@ -81,7 +81,7 @@
 
       <!-- Feature -->
       <section class="feature">
-        <div class="container feature-container">
+        <div class="container flex-container">
           <h2 class="visually-hidden">Feature</h2>
           <ul class="list feature-list">
             <li class="feature-item">
@@ -122,17 +122,28 @@
 
       <!-- action -->
       <section class="action">
-        <div class="container">
+        <div class="container action-container">
           <h2 class="subtitle">What are we doing</h2>
-          <ul class="list">
-            <li>
-              <img src="./images/img-1-opt.jpg" alt="monitor" width="360" />
-            </li>
-            <li>
-              <img src="./images/img-2-opt.jpg" alt="mobiles" width="360" />
-            </li>
-            <li>
+          <ul class="list flex-list">
+            <li class="item">
               <img
+                class="card-image"
+                src="./images/img-1-opt.jpg"
+                alt="monitor"
+                width="360"
+              />
+            </li>
+            <li class="item">
+              <img
+                class="card-image"
+                src="./images/img-2-opt.jpg"
+                alt="mobiles"
+                width="360"
+              />
+            </li>
+            <li class="item">
+              <img
+                class="card-image"
                 src="./images/img-3-opt.jpg"
                 alt="hand with phone"
                 width="360"
@@ -143,49 +154,69 @@
       </section>
 
       <section class="team">
-        <div class="container">
+        <div class="container flex-container">
           <h2 class="subtitle">Our Team</h2>
-          <ul class="list">
-            <li>
+          <ul class="list flex-list">
+            <li class="item">
               <img
+                class="card-image"
                 src=" ./images/mark-opt.jpg"
-                alt="Mark Guerrero Product Designer"
+                alt="Mark
+              Guerrero Product Designer"
                 width="264"
               />
-              <h3 class="section-subtitle">Mark Guerrero</h3>
 
-              <p class="subtitle-text">Product Designer</p>
+              <div class="team-item">
+                <h3 class="section-subtitle">Mark Guerrero</h3>
+
+                <p class="subtitle-text">Product Designer</p>
+              </div>
             </li>
-            <li>
+
+            <li class="item">
               <img
+                class="card-image"
                 src=" ./images/tom-opt.jpg"
-                alt="Tom Ford Frontend Developer"
+                alt="Tom Ford
+              Frontend Developer"
                 width="264"
               />
-              <h3 class="section-subtitle">Tom Ford</h3>
 
-              <p class="subtitle-txt">Frontend Developer</p>
+              <div class="team-item">
+                <h3 class="section-subtitle">Tom Ford</h3>
+
+                <p class="subtitle-txt">Frontend Developer</p>
+              </div>
             </li>
-            <li>
+            <li class="item">
               <img
+                class="card-image"
                 src=" ./images/camila-opt.jpg"
-                alt="Camila Garcia Marketing"
+                alt="Camila
+              Garcia Marketing"
                 width="264"
               />
-              <h3 class="section-subtitle">Camila Garcia</h3>
 
-              <p class="subtitle-text">Marketing</p>
+              <div class="team-item">
+                <h3 class="section-subtitle">Camila Garcia</h3>
+
+                <p class="subtitle-text">Marketing</p>
+              </div>
             </li>
 
-            <li>
+            <li class="item">
               <img
+                class="card-image"
                 src="./images/daniel-opt.jpg"
-                alt="Daniel Wilson UI Designer"
+                alt="Daniel
+              Wilson UI Designer"
                 width="264"
               />
-              <h3 class="section-subtitle">Daniel Wilson</h3>
+              <div class="team-item">
+                <h3 class="section-subtitle">Daniel Wilson</h3>
 
-              <p class="subtitle-text">UI Designer</p>
+                <p class="subtitle-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
