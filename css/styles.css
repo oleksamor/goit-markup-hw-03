@@ -66,13 +66,14 @@ a {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 24px;
-  /* outline: 2px solid rgb(0, 255, 38); */
+  /* margin: 24px; */
+  outline: 2px solid rgb(0, 255, 38);
 }
 
 .header-container {
   display: flex;
-  align-items: center;
+  text-align: center;
+  /* justify-content: space-around; */
 }
 
 body {
@@ -195,20 +196,26 @@ body {
 
 .hero {
   background: var(--dark-color-bg);
-  width: 1440px;
+  /* width: 1440px;
   height: 600px;
   left: 0px;
-  top: 72px;
+  top: 72px; */
+  padding: 188px 0;
+  outline: 2px solid tomato;
 }
 .hero-container {
   margin: 0 auto;
   text-align: center;
+  outline: 2px solid tomato;
 }
 .main-title {
   font-size: 56px;
   line-height: 1.07;
   color: var(--primary-white-color);
-  max-width: 496;
+  max-width: 496px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 48px;
 }
 
 /* ========= Button ============== */
@@ -259,6 +266,26 @@ body {
   background-color: var(--light-color-bg);
 }
 /* =================== /Team ============== */
+
+/* =========portrfolio filters ============== */
+
+.filters-container {
+  color: #05372b;
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-item {
+  outline: solid rgb(208, 255, 0);
+  margin-right: 24px;
+}
+.portfolio-item:last-child {
+  margin-right: 0;
+}
+
+/* ========= /portrfolio filters ============== */
 
 /* =============FOOTER=================== */
 
