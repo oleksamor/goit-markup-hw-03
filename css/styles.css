@@ -162,7 +162,7 @@ body {
 }
 
 .header-item {
-  margin-left: 40px;
+  /* margin-left: 40px; */
 }
 .header-item:last-child {
   margin-right: 0;
@@ -223,6 +223,7 @@ body {
   width: 169px;
   height: 56px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  letter-spacing: normal;
   border-radius: 4px;
   color: var(--primary-bg-color);
   background-color: var(--primary-brand-color);
@@ -296,26 +297,29 @@ body {
 .item {
   background: rgb(255, 255, 255);
   margin-right: 24px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .item:last-child {
   margin-right: 0;
 }
-
+.action-item {
+  margin-right: 24px;
+}
 /* =================== /ACTIVE ============== */
 /* =================== Team ============== */
 .team {
   text-align: center;
   background-color: var(--light-color-bg);
   padding-bottom: 120px;
+  padding-top: 120px;
 }
 
 .team-item {
   padding-top: 32px;
   padding-bottom: 32px;
-  background: #ffffff;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
+  /* background: #ffffff; */
 }
 /* =================== /Team ============== */
 
