@@ -36,7 +36,7 @@ p {
 
 img {
   display: block;
-  min-width: 100px;
+  width: 100%;
   height: auto;
 }
 ul {
@@ -63,8 +63,7 @@ a {
 }
 
 .page-header {
-  background-color: var(--primary-bg-color);
-  padding: 24px 156px;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .container {
@@ -73,7 +72,6 @@ a {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid rgb(0, 255, 38); */
 }
 
 body {
@@ -93,6 +91,7 @@ body {
 
 /* ================== COMPONENTS ================== */
 .subtitle {
+  text-align: center;
   font-size: var(--header-2-font-size);
   line-height: var(--header-2-line-height);
   text-transform: capitalize;
@@ -114,7 +113,7 @@ body {
 .footer-text {
   color: var(--accent-color);
   width: 264px;
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 /* ================== /COMPONENTS ================== */
@@ -123,7 +122,7 @@ body {
 
 .header-container {
   display: flex;
-  text-align: center;
+  align-items: center;
 }
 
 .page-nav {
@@ -137,10 +136,6 @@ body {
   font-size: var(--logo-font-size);
   font-weight: 800;
   line-height: 1.17;
-  width: 115px;
-  height: 24px;
-  left: 156px;
-  top: 24px;
   padding: 0px;
   margin-right: 76px;
 }
@@ -156,16 +151,14 @@ body {
 
 .menu {
   display: flex;
-  width: 261px;
-  height: 24px;
-  left: 347px;
-  top: 24px;
-  padding: 0px;
+  gap: 40px;
 }
 
 .menu-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
-  color: #2e2f42;
+  color: var(--dark-color-bg);
 }
 
 .header-item {
@@ -205,12 +198,11 @@ body {
   background: var(--dark-color-bg);
   text-align: center;
   padding: 188px 0;
-  outline: 2px solid tomato;
 }
+
 .hero-container {
   margin: 0 auto;
   text-align: center;
-  outline: 2px solid tomato;
 }
 .main-title {
   font-size: 56px;
@@ -266,6 +258,11 @@ body {
 /* ========= /Button ============== */
 
 /** =========== feature =============*/
+
+.feature {
+  padding: 120px 0;
+}
+
 .feature-container {
   /* margin-left: auto;
   margin-right: auto; */
@@ -273,8 +270,6 @@ body {
 }
 .feature-list {
   display: flex;
-  margin-top: 120px;
-  margin-bottom: 120px;
 }
 .feature-item {
   width: 264px;
@@ -287,21 +282,15 @@ body {
 /** =========== /feature =============*/
 
 /* =================== ACTIVE ============== */
-.flex-container {
+/* .flex-container {
   margin-bottom: 120px;
-}
+} */
 .action {
-  text-align: center;
   padding-bottom: 120px;
 }
 .flex-list {
   display: flex;
   margin-top: 72px;
-  margin-right: 24px;
-  margin-bottom: 0;
-}
-.card-image {
-  display: block;
 }
 
 .item {
@@ -323,6 +312,10 @@ body {
 .team-item {
   padding-top: 32px;
   padding-bottom: 32px;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 /* =================== /Team ============== */
 
@@ -368,5 +361,5 @@ body {
 /* =============FOOTER=================== */
 .footer-content {
   background: var(--dark-color-bg);
-  padding: 100px 1020px 100px 156px;
+  padding: 100px 0;
 }
